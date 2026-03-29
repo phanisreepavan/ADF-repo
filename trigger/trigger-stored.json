@@ -1,0 +1,24 @@
+{
+	"name": "trigger-stored",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "FullLenngth_prod_pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/sourcedir/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/37b86101-12d0-400f-91d1-6760e016546d/resourceGroups/resource_group_new/providers/Microsoft.Storage/storageAccounts/datalakephani98",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "datafactorynewphani",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "349da9f7-911f-4311-9d43-946bff8c7c71",
+		"tenantId": "191ebcec-2a6b-4491-bd2f-f7ed2ed606f6"
+	}
+}
