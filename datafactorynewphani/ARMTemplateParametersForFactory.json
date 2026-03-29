@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafactorynewphani"
+		},
+		"Amazons3toadf_secretAccessKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"Amazons3toadf_properties_typeProperties_accessKeyId": {
+			"value": "AKIAS4SEB47XDEZWJXV2"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://datalakephani98.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "sqlserverphani.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "sqldb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "azuresql"
+		},
+		"githublink_properties_typeProperties_url": {
+			"value": "https://github.com/"
+		},
+		"trigger-stored_properties_typeProperties_scope": {
+			"value": "/subscriptions/37b86101-12d0-400f-91d1-6760e016546d/resourceGroups/resource_group_new/providers/Microsoft.Storage/storageAccounts/datalakephani98"
+		},
+		"trigger3_properties_pipeline_parameters_starttime": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"trigger3_properties_pipeline_parameters_endtime": {
+			"value": "@trigger().outputs.windowEndTime"
+		}
+	}
+}
